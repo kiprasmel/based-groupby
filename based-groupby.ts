@@ -1,4 +1,4 @@
-export type Group<T, K extends keyof T> = {
+export type GroupBy<T, K extends keyof T> = {
     /**
      * the `&` is used to restrict the allowed types,
      * without it TS gives an error.
@@ -14,7 +14,7 @@ export const groupBy = <T, K extends keyof T>(
     }: {
         giveEmptyArraysForUnreachedGroups?: false | T[K][];
     } = {},
-): Group<T, K> => {
+): GroupBy<T, K> => {
     type GroupName = T[K];
 
     const groups = new Map<GroupName, T[]>();
