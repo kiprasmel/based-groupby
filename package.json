@@ -1,7 +1,7 @@
 {
   "name": "based-groupby",
-  "version": "0.1.0",
-  "main": "dist/groupy-by.js",
+  "version": "0.1.1",
+  "main": "dist/based-groupby.js",
   "author": "Kipras Melnikovas <kipras@kipras.org> (https://kipras.org/)",
   "license": "MIT",
   "scripts": {
